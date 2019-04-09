@@ -7,8 +7,14 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Mettre à jour le dépôt",
+      "name": "Update repo",
       "program": "${workspaceFolder}/.scripts/mise-a-jour.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug",
+      "program": "${file}"
     }
   ]
 }
