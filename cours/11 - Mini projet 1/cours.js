@@ -1,29 +1,57 @@
-/* Mini projet : valider un rendez-vous */
-// Retrouvez chaque version du projet dans cours-1.js, cours-2.js etc.
+// Goal find out if appointement ends before EOD
+// appointement starts: 15:40
+// EOD: 16:30
+// appointement length: variable
+// if appointement ends before EOD, display: "RDV OK"
+// if appointement ends after EOD, display: "RDV impossible"
+// display end of appointement: "Le RDV se terminera a: HHhMM"
 
-// Exemple 1 : pour une durée de RDV de 15 minutes
+// A Time is a String
+// String String Number -> String
+// Computes a String to check if an appointement can
+// be booked before the EOD and display the answer with the time
+// of the appointement end
+// expects: canBookAppointement(15) to produce: "RDV OK.
+// Le RDV se terminera a: 15h55"
 
-// Début du RDV : 15h40
-let debutRdvHeures = 15;
-let debutRdvMinutes = 40;
+function canMakeApt(eod, aptStart, duration) {
+  const aptEnd = timeToMinutes(aptStart) + duration;
+  const finishAfterEod =  aptEnd > timeToMinutes(eod);
 
-// Fin de journée : 16h30
-let finJourneeHeures = 16;
-let finJourneeMinutes = 30;
-
-// Durée du RDV : 15 minutes
-let duree = 15;
-
-// ETAPE 1 : Calcul de la fin du RDV
-let finRdvHeures = debutRdvHeures;
-let finRdvMinutes = debutRdvMinutes + duree;
-
-// ETAPE 2 : Est-ce que la fin du RDV est avant la fin de la journée ?
-if (finRdvHeures < finJourneeHeures) {
-  console.log("RDV OK");
-} else {
-  console.log("RDV impossible");
+  if (finishAfterEod) {
+    console.log("RDV impossible!");
+    console.log(`Le RDV se terminerait à ${formatTime(aptEnd)} alors que la journée finie à ${eod}`);
+  } else {
+    console.log("RDV OK");
+    console.log(`Le RDV se terminera à ${formatTime(aptEnd)}`);
+  }
 }
 
-// ETAPE 3 : Affichage de l'heure de fin du RDV
-console.log("Le RDV se terminera à " + finRdvHeures + "h" + finRdvMinutes);
+function timeToMinutes(time) {
+  let hours, minutes;
+  [hours, minutes] = time.split("h").map((n)=>Number(n));
+
+  return hours * 60 + minutes;
+}
+
+function formatTime(minutes) {
+  return `${formatHours(minutes)}h${formatMinutes(minutes)}`;
+}
+
+function formatHours(minutes) {
+  return padLeft(Math.floor(minutes / 60));
+}
+
+function formatMinutes(minutes) {
+  return padLeft(minutes % 60);
+}
+
+function padLeft(number) {
+  const str = String(number)
+  if (str.length === 1) {
+    return "0" + str;
+  }
+  return str;
+}
+
+console.log(canMakeApt("16h30", "09h01", 55));
