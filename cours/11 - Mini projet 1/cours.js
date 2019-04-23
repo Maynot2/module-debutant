@@ -14,33 +14,8 @@
 // expects: canBookAppointement(15) to produce: "RDV OK.
 // Le RDV se terminera a: 15h55"
 
-var midnight = 1440
-var noon = 1440 / 2
-
-function canMakeApt(eod, aptStart, duration) {
-  var eodMinutes = timeToMinutes(eod)
-  var aptStartMinutes = timeToMinutes(aptStart)
-  var aptEndMinutes = (aptStartMinutes + duration) % midnight
-  var timeLeftBeforeEod;
-
-  if (eodMinutes < noon && aptStartMinutes < midnight) {
-    timeLeftBeforeEod = midnight - aptStartMinutes + eodMinutes
-  } else {
-    timeLeftBeforeEod = eodMinutes - aptStartMinutes
-  }
-
-  if (duration > timeLeftBeforeEod) {
-    console.log("RDV impossible!");
-    console.log(`Le RDV se terminerait à ${formatTime(aptEndMinutes)} alors que la journée finie à ${eod}`);
-  } else {
-    console.log("RDV OK");
-    console.log(`Le RDV se terminera à ${formatTime(aptEndMinutes)}`);
-  }
-}
-
 function timeToMinutes(time) {
-  let hours, minutes;
-  [hours, minutes] = time.split("h").map((n)=>Number(n));
+  let [hours, minutes] = time.split("h").map((n)=>Number(n));
 
   return hours * 60 + minutes;
 }
@@ -65,6 +40,30 @@ function padLeft(number) {
   return str;
 }
 
+const midnight = 1440;
+const noon = 1440 / 2;
+
+function canMakeApt(eod, aptStart, duration) {
+  const eodMinutes = timeToMinutes(eod);
+  const aptStartMinutes = timeToMinutes(aptStart);
+  const aptEndMinutes = (aptStartMinutes + duration) % midnight;
+  let timeLeftBeforeEod;
+
+  if (eodMinutes < noon && aptStartMinutes < midnight) {
+    timeLeftBeforeEod = midnight - aptStartMinutes + eodMinutes
+  } else {
+    timeLeftBeforeEod = eodMinutes - aptStartMinutes
+  }
+
+  if (duration > timeLeftBeforeEod) {
+    console.log("RDV impossible!");
+    console.log(`Le RDV se terminerait à ${formatTime(aptEndMinutes)} alors que la journée finie à ${eod}`);
+  } else {
+    console.log("RDV OK");
+    console.log(`Le RDV se terminera à ${formatTime(aptEndMinutes)}`);
+  }
+}
+
 console.log(canMakeApt("17h00", "16h30", 25));
 console.log(canMakeApt("17h00", "16h30", 35));
 console.log(canMakeApt("00h00", "23h30", 29));
@@ -75,7 +74,4 @@ console.log(canMakeApt("00h10", "23h00", 65));
 console.log(canMakeApt("00h10", "23h00", 75));
 console.log(canMakeApt("12h10", "11h00", 65));
 console.log(canMakeApt("12h10", "11h00", 85));
-
-console.log("\n----pb d'une journée à cheval sur deux jours et un rdv de plus de 12 heures---\n\n")
-
-console.log(canMakeApt("12h50", "23h50", 721));
+console.log(canMakeApt("11h59", "23h50", 721));
