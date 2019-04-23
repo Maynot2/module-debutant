@@ -86,14 +86,20 @@ C'est une question qu'on me pose souvent. Si vous êtes débutant complet et si 
 La réponse est simple. Il faut posséder les compétences demandées sur le marché du travail. Avant de vous spécialiser je vous conseille de regarder les compétences recherchées dans votre région ou dans le domaine qui vous intéresse (frontend / backend) *puis* d'acquérir ces compétences rapidement.
 
 Voici quelques sites de qualité pour trouver des offres d'emploi :
-- [welcometothejungle.co](http://welcometothejungle.co)
-- [hired.com](http://hired.com)
+- [welcometothejungle.co](https://welcometothejungle.co)
+- [hired.com](https://hired.com)
 - [malt.fr](https://malt.fr)
-- [remixjobs.com](http://remixjobs.com/)
-- [indeed.fr](http://www.indeed.fr/)
-- [talent.io](http://talent.io)
-- [angel.co](http://angel.co)
+- [remixjobs.com](https://remixjobs.com/)
+- [indeed.fr](https://www.indeed.fr/)
+- [talent.io](https://talent.io)
+- [angel.co](https://angel.co)
+- [chooseyourboss.com](https://www.chooseyourboss.com/)
 
+Quelques autres sites moins connus :
+- [altersis.com](https://altersis.com/fr/)
+- [easypartner.fr](https://www.easypartner.fr)
+- [omniciel.fr](https://www.omniciel.fr)
+- [carriere-info.fr](https://www.carriere-info.fr/)
 
 ## FAQ sur le langage JavaScript
 
@@ -104,6 +110,8 @@ Vous avez des questions sur le langage JavaScript ? Consultez la [Foire aux Ques
 J'envoie une newsletter chaque vendredi à tous les étudiants, vous pouvez les consulter ici (de la plus récente à la plus ancienne).
 Vous pouvez vous inscrire à cette newsletter gratuitement sur [www.javascriptdezero.com](https://www.javascriptdezero.com).
 
+- [JavaScript de Zéro #31 — Nouvelle vidéo + comment décrocher votre 1er job ?](http://sh1.sendinblue.com/nvvlc89fsc.html?t=1555053295)
+- [JavaScript de Zéro #30 — Nouvelle vidéo + The Whale](http://sh1.sendinblue.com/nv35c89fsc.html?t=1554887343)
 - [JavaScript de Zéro #29 — 🚀 www.ledevweb.fr + BattleDev (live de 2h) !](http://sh1.sendinblue.com/nuto089fsc.html?t=1554301686)
 - [JavaScript de Zéro #28 — Replay du LIVE #2 (2h) + ledevweb.fr !](http://sh1.sendinblue.com/nuapc89fsc.html?t=1553242914)
 - [JavaScript de Zéro #27 — Replay du LIVE (vidéo de 2h30 !)](http://sh1.sendinblue.com/nu18089fsc.html?t=1553242914)

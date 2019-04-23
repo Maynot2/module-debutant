@@ -73,6 +73,7 @@ p.code {
   font-family: "Courier New", Courier, monospace;
   border-radius: var(--dim-base);
   padding: var(--dim-demie) var(--dim-base);
+  margin: 1px 0;
 }
 
 footer {
@@ -131,7 +132,7 @@ a.wikipedia::before {
 pre.valeur {
   font-size: 110%;
   display: inline-block;
-  margin: 0;
+  margin: 8px 0;
   white-space: pre-wrap;
 }
 
