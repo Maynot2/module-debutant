@@ -457,6 +457,95 @@ Utilisez la fonction recherche du navigateur pour trouver ce qui vous intéresse
     - [14:39](https://www.youtube.com/watch?v=-6KfFIoktuY&t=879s) Des questions ? Mettez-les dans les commentaires !
     - [14:45](https://www.youtube.com/watch?v=-6KfFIoktuY&t=885s) Partagez la vidéo et abonnez-vous, merci ! :)
 
+15. [Comment utiliser une boucle en JavaScript ? (Mini projet #3) [M0L14]](https://www.youtube.com/watch?v=lCrAB-nB-ZQ)
+    - [00:15](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=15s) Rappel du bogue
+    - [00:50](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=50s) Démonstration du bogue dans le débogueur
+    - [01:20](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=80s) Solution au bogue grâce à une boucle while
+    - [01:43](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=103s) Vérification de la nouvelle version, ça marche !
+    - [02:26](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=146s) Comment tester du code avec du code ?
+    - [02:57](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=177s) Utilisation d'une boucle for pour tester le code
+    - [03:52](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=232s) Exécution du code de test
+    - [04:45](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=285s) Proposition d'amélioration : tout afficher sur une seule ligne avec la durée
+    - [05:15](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=315s) Création d'une variable intermédiaire rdvOk
+    - [06:00](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=360s) Utilisation de rdvOk pour afficher RDV ok ou impossible
+    - [06:31](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=391s) Astuce VSCode : comment dupliquer les lignes ?
+    - [06:54](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=414s) Explication de la condition if (rdvOk)
+    - [07:15](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=435s) Test du code : ça fonctionne
+    - [07:30](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=450s) Ajout de la durée dans la sortie du programme
+    - [07:43](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=463s) Astuce VSCode : le multicurseur avec Alt+Clic
+    - [08:05](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=485s) Exécution du code, tout est sur une ligne
+    - [08:23](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=503s) Limitations de ce code : début rdv, fin de journée sont fixes
+    - [08:45](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=525s) Prochaine étape : rendre flexible le code grâce aux fonctions
+    - [09:33](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=573s) Code source sur GitHub
+    - [09:47](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=587s) Des questions ? Mettez-les dans les commentaires
+    - [09:53](https://www.youtube.com/watch?v=lCrAB-nB-ZQ&t=593s) Partagez la vidéo, abonnez-vous à ma chaîne :), merci !
+
+16. [Les fonctions en JavaScript (partie 1) [M0L15]](https://www.youtube.com/watch?v=QTPbgb4G7Hs)
+    - [00:12](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=12s) Qu'est-ce qu'une fonction ?
+    - [00:20](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=20s) Comment déclarer une fonction ?
+    - [00:55](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=55s) Faire un appel de fonction
+    - [01:13](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=73s) Démonstration avec le débogueur
+    - [02:35](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=155s) Explication du pas à pas principal et détaillé du débogueur (F10/F11)
+    - [03:45](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=225s) Description des 4 étapes effectuées lors d'un appel de fonction
+    - [04:12](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=252s) console.log() est une fonction !
+    - [04:40](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=280s) Si on appuie sur F11 on rentre dans console.log !
+    - [05:18](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=318s) Les paramètres de fonctions : exemple
+    - [05:45](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=345s) Comment utiliser les paramètres dans l'appel de fonction ?
+    - [06:10](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=370s) Vocabulaire : définition d'argument et paramètre
+    - [06:53](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=413s) Comportement de l'interpréteur JavaScript lors d'un appel avec argument
+    - [07:41](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=461s) Analogie avec une variable prénom dans le corps de la fonction
+    - [08:10](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=490s) Utilisation d'une variable comme argument lors d'un appel de fonction
+    - [09:36](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=576s) Exercices sur GitHub (lien ci-dessous)
+    - [09:57](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=597s) Des questions ? Posez-les dans les commentaires !
+    - [10:02](https://www.youtube.com/watch?v=QTPbgb4G7Hs&t=602s) Partagez la vidéo et abonnez-vous :), merci !
+
+17. [Les fonctions en JavaScript (partie 2) [M0L16]](https://www.youtube.com/watch?v=yR9ei5XpIU0)
+    - [00:24](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=24s) Déclarer une fonction avec plusieurs paramètres
+    - [00:50](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=50s) Appel de fonction à plusieurs paramètres
+    - [01:35](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=95s) Utiliser des variables comme argument
+    - [02:10](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=130s) Que se passe-t-il quand on appelle une fonction avec le mauvais nombre d'arguments ?
+    - [02:20](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=140s) 1er cas : sans aucun argument
+    - [02:48](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=168s) Rappel de ce qu'est la valeur undefined
+    - [03:24](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=204s) 2e cas : avec un argument en moins
+    - [03:50](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=230s) 3e cas : avec un argument en trop
+    - [04:20](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=260s) Comment retourner une valeur depuis une fonction ?
+    - [04:25](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=265s) Le mot-clé return
+    - [04:34](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=274s) Exemple avec un calcul de prix TTC, pas à pas
+    - [06:12](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=372s) Utilisation de la valeur de retour
+    - [06:45](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=405s) Calcul de la valeur de retour
+    - [07:47](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=467s) L'appel de fonction est "substitué" à la valeur de retour
+    - [08:23](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=503s) Stocker la valeur de retour dans une variable
+    - [09:08](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=548s) Retourner une valeur via une variable
+    - [10:09](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=609s) Exercices sur le GitHub de la formation (lien ci-dessous)
+    - [10:28](https://www.youtube.com/watch?v=yR9ei5XpIU0&t=628s) Des questions ? Mettez-les dans les commentaires !
+
+18. [Les fonctions en JavaScript (partie 3) [M0L17]](https://www.youtube.com/watch?v=aQDhZndDuos)
+    - [00:15](https://www.youtube.com/watch?v=aQDhZndDuos&t=15s) Présentation du code sans fonctions (sale)
+    - [00:40](https://www.youtube.com/watch?v=aQDhZndDuos&t=40s) Qu'est-ce que les nombres magiques ?
+    - [01:08](https://www.youtube.com/watch?v=aQDhZndDuos&t=68s) Objectif du code : afficher un ticket de caisse
+    - [01:30](https://www.youtube.com/watch?v=aQDhZndDuos&t=90s) Amélioration du code grâce aux fonctions
+    - [01:55](https://www.youtube.com/watch?v=aQDhZndDuos&t=115s) Configuration VSCode pour lancer le fichier ouvert (astuce $file)
+    - [02:50](https://www.youtube.com/watch?v=aQDhZndDuos&t=170s) Refactoring (remaniement) du code
+    - [03:10](https://www.youtube.com/watch?v=aQDhZndDuos&t=190s) Factorisation des titres : fonction ecrireTitre(titre)
+    - [03:54](https://www.youtube.com/watch?v=aQDhZndDuos&t=234s) Factorisation des articles : fonction ecrireArticle(nomArticle, prixHT)
+    - [04:40](https://www.youtube.com/watch?v=aQDhZndDuos&t=280s) Factorisation calcul de la TVA : fonction calculerTVA(prixHT)
+    - [05:53](https://www.youtube.com/watch?v=aQDhZndDuos&t=353s) Avantages de la factorisation : meilleure lisibilité
+    - [07:01](https://www.youtube.com/watch?v=aQDhZndDuos&t=421s) Faciliter la maintenance
+    - [07:15](https://www.youtube.com/watch?v=aQDhZndDuos&t=435s) Ças d'étude : modification des titres pour économiser de l'encre
+    - [08:58](https://www.youtube.com/watch?v=aQDhZndDuos&t=538s) Cas d'étude : changement de la valeur de la TVA
+    - [09:50](https://www.youtube.com/watch?v=aQDhZndDuos&t=590s) Faire du code propre : supprimer les nombres magiques
+    - [10:15](https://www.youtube.com/watch?v=aQDhZndDuos&t=615s) Création de variables pour les prix des articles
+    - [10:22](https://www.youtube.com/watch?v=aQDhZndDuos&t=622s) Astuce VSCode : command+D pour sélectionner la prochaine occurence
+    - [11:03](https://www.youtube.com/watch?v=aQDhZndDuos&t=663s) Le programme est déjà beaucoup plus lisible (récapitulatif)
+    - [11:23](https://www.youtube.com/watch?v=aQDhZndDuos&t=683s) Ajout d'espace vertical
+    - [11:55](https://www.youtube.com/watch?v=aQDhZndDuos&t=715s) Déléguer du code à une fonction
+    - [12:47](https://www.youtube.com/watch?v=aQDhZndDuos&t=767s) Explication avantages/inconvénients des deux façons de faire
+    - [14:58](https://www.youtube.com/watch?v=aQDhZndDuos&t=898s) Explications du code délégué dans chaque cas
+    - [15:47](https://www.youtube.com/watch?v=aQDhZndDuos&t=947s) Entraînez-vous !
+    - [16:08](https://www.youtube.com/watch?v=aQDhZndDuos&t=968s) Le code source est sur le GitHub de la formation (lien ci-dessous) !
+    - [16:30](https://www.youtube.com/watch?v=aQDhZndDuos&t=990s) Des questions ? Posez-les dans les commentaires !
+    - [16:38](https://www.youtube.com/watch?v=aQDhZndDuos&t=998s) Abonnez-vous à ma chaîne, merci :) !
+
 ## En savoir plus sur les exercices
 
 ### Comment faire les exercices ?

@@ -1,3 +1,5 @@
+/* Mini projet : valider un rendez-vous */
+
 // Goal find out if appointement ends before EOD
 // appointement starts: 15:40
 // EOD: 16:30
