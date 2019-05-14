@@ -24,13 +24,13 @@
 // Pour faire cet exercice : 
 // 1. Décommentez le code de Tom ci-dessous
 // 2. Rédigez le corps de la fonction afficherAdresseClient
-// let nom = "Tom REDOCEMIA";
-// let numeroRue = 21;
-// let nomRue = "rue du bloc d'instructions";
-// let codePostal = 1337;
-// let ville = "POINT-VIRGULE";
-// afficherTitre("Destinataire");
-// afficherAdresseClient(nom, numeroRue, nomRue, codePostal, ville);
+let nom = "Tom REDOCEMIA";
+let numeroRue = 21;
+let nomRue = "rue du bloc d'instructions";
+let codePostal = 1337;
+let ville = "POINT-VIRGULE";
+afficherTitre("Destinataire");
+afficherAdresseClient(nom, numeroRue, nomRue, codePostal, ville);
 
 function afficherTitre(titre) {
   console.log("===[ " + titre + " ]===");
@@ -39,18 +39,21 @@ function afficherTitre(titre) {
 // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 // Rédigez la fonction afficherAdresseClient ci-dessous
 function afficherAdresseClient(nom, numeroRue, nomRue, codePostal, ville) {
-  // console.log(nom);
-  // console.log(numeroRue + " " + nomRue);
-  // console.log(codePostal + " " + ville);
+  console.log(nom);
+  console.log(numeroRue + " " + nomRue);
+  console.log(codePostal + " " + ville);
 }
 // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
 // Exercice 1
 // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====> 
 // Complétez le corps de la fonction ci-dessous pour renvoyer la bonne valeur avec le mot-clé return
-// function formaterNumeroClient(numero) { 
+function formaterNumeroClient(numero) { 
+  const préfix = numero >= 5000 && numero < 7000 ? "PR" : "42";
+  const numéroFormaté = String(numero).padStart(4, "0");
 
-// }
+  return préfix + numéroFormaté;
+}
 // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
 
@@ -58,19 +61,27 @@ function afficherAdresseClient(nom, numeroRue, nomRue, codePostal, ville) {
 // Pour faire cet exercice : 
 // 1. Décommentez le code de Tom ci-dessous
 // 2. Rédigez le code manquant juste après le code de Tom
-// let adresseMagiciensDuCode = `MagiciensDuCode
-// 42 avenue de l'accolade ouvrante
-// 1337 POINT-VIRGULE`;
-// let numeroClient = 5842;
+let adresseMagiciensDuCode = `MagiciensDuCode
+42 avenue de l'accolade ouvrante
+1337 POINT-VIRGULE`;
+let numeroClient = 5842;
 
-// afficherTitre("Notre adresse");
-// console.log(adresseMagiciensDuCode);
-// console.log("");
+afficherTitre("Notre adresse");
+console.log(adresseMagiciensDuCode);
+console.log("");
+
 
 // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 // D'ici vous avez accès à toutes les variables précédemment déclarées dont l'adresse de Tom (nom, numeroRue, nomRue, codePostal, ville), adresseMagiciensDuCode et numeroClient.
 // Vous avez également accès à toutes les fonctions afficherTitre, afficherAdresseClient, formaterNumeroClient
 
+afficherTitre("Destinataire");
+console.log("Tom REDOCEMIA")
+console.log("21 rue du bloc d'instructions")
+console.log("1337 POINT-VIRGULE")
+console.log("");
+afficherTitre("Vos références");
+console.log(`N° de client : ${formaterNumeroClient(numeroClient)}`);
 
 // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
@@ -78,8 +89,13 @@ function afficherAdresseClient(nom, numeroRue, nomRue, codePostal, ville) {
 function afficherLigneLogo(esp1, esp2, esp3) {
   // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
   // Rédigez le corps de la fonction afficherLigneLogo ci-dessous
+  const sym = "**";
+  const offset = sym.length;
+  let ligne = "";
 
+  Array.from(arguments).forEach(esp => ligne += sym.padStart(offset + esp, " "));
 
+  console.log(ligne);
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 }
 
@@ -94,36 +110,36 @@ afficherLigneLogo(6, 8, 12);
 
 // Chassez le bogue ! 0
 // Tom a découpé son code en plusieurs fonctions, décommentez-le et corrigez les bogues !
-// function construireLigneAvecBoules(longueurLigne) {
-//   let ligne = "";
-//   let symbole = "*";
-//   for (let i = 0; i < longueurLigne; i = i + 1) {
-//     ligne = ligne + symbole;
-//     if (symbole !== "*") {
-//       symbole = "o";
-//     } else {
-//       symbole = "*";
-//     }
-//   }
-//   return ligne;
-// }
+function construireLigneAvecBoules(longueurLigne) {
+  let ligne = "";
+  let symbole = "*";
+  for (let i = 1; i <= longueurLigne; i = i + 1) {
+    ligne = ligne + symbole;
+    if (symbole === "*") {
+      symbole = "o";
+    } else {
+      symbole = "*";
+    }
+  }
+  return ligne;
+}
 
-// function construirePlusieursEspaces(nombre) {
-//   let ligne = "";
-//   for (let i = 0; i <= nombre; i = i + 1) {
-//     ligne = ligne + " ";
-//   }
-//   return ligne;
-// }
+function construirePlusieursEspaces(nombre) {
+  let ligne = "";
+  for (let i = 0; i < nombre; i = i + 1) {
+    ligne = ligne + " ";
+  }
+  return ligne;
+}
 
-// console.log(construirePlusieursEspaces(5) + construireLigneAvecBoules(1));
-// console.log(construirePlusieursEspaces(3) + construireLigneAvecBoules(3));
-// console.log(construirePlusieursEspaces(3) + construireLigneAvecBoules(4));
-// console.log(construirePlusieursEspaces(2) + construireLigneAvecBoules(7));
-// console.log(construirePlusieursEspaces(1) + construireLigneAvecBoules(10));
-// console.log(construirePlusieursEspaces(0) + construireLigneAvecBoules(11));
+console.log(construirePlusieursEspaces(5) + construireLigneAvecBoules(1));
+console.log(construirePlusieursEspaces(4) + construireLigneAvecBoules(3));
+console.log(construirePlusieursEspaces(3) + construireLigneAvecBoules(5));
+console.log(construirePlusieursEspaces(2) + construireLigneAvecBoules(7));
+console.log(construirePlusieursEspaces(1) + construireLigneAvecBoules(9));
+console.log(construirePlusieursEspaces(0) + construireLigneAvecBoules(11));
 
-// for (let i = 0; i < 2; i = i + 1) {
-//   console.log(construirePlusieursEspaces(4) + "***");
-// }
+for (let i = 0; i < 3; i = i + 1) {
+  console.log(construirePlusieursEspaces(4) + "***");
+}
 
