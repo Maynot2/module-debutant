@@ -29,6 +29,7 @@ function maPremiereFonction() {
 // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 // Qu'est-ce que Tom a oublié de faire ? Rédigez le code manquant ci-dessous :
 
+maPremiereFonction();
 
 // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
@@ -46,6 +47,9 @@ let adresseMagiciensDuCode = `MagiciensDuCode
 // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
 // Rédigez la fonction afficherTitre(titre) ci-dessous
 
+function afficherTitre(titre) {
+  console.log(`===[ ${titre} ]===`);
+}
 
 // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 
@@ -61,20 +65,20 @@ console.log(adresseMagiciensDuCode);
 // Modifiez la fonction afficherNumeroClient pour que le format du numéro client soit toujours correct
 function afficherNumeroClient(numero) {
   // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
-  console.log("N° de client : " + numero);
+  console.log("N° de client : 42" + String(numero).padStart(4, "0"));
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 }
 
 // Voici le code de test qu'a déjà rédigé Tom, décommentez-le sans le modifier.
-// afficherNumeroClient(0);
-// afficherNumeroClient(1);
-// afficherNumeroClient(9);
-// afficherNumeroClient(10);
-// afficherNumeroClient(99);
-// afficherNumeroClient(100);
-// afficherNumeroClient(999);
-// afficherNumeroClient(1000);
-// afficherNumeroClient(9999);
+afficherNumeroClient(0);
+afficherNumeroClient(1);
+afficherNumeroClient(9);
+afficherNumeroClient(10);
+afficherNumeroClient(99);
+afficherNumeroClient(100);
+afficherNumeroClient(999);
+afficherNumeroClient(1000);
+afficherNumeroClient(9999);
 
 // Exercice 3
 // Pour faire cet exercice :
@@ -82,30 +86,30 @@ function afficherNumeroClient(numero) {
 // 2. Complétez la fonction afficherEntete() comme il faut ci-dessous
 function afficherEntete(numeroClient) {
   afficherTitre("Notre adresse");
-  // <===== VOTRE CODE ICI: Insérez/modifiez le code à partir d'ici =====>
-  // Ici vous pouvez accéder à toutes les fonctions déclarées dans les exercices précédents.
-  // Vous avez également accès à la variable adresseMagiciensDuCode, profitez-en ;).
-
+  console.log(adresseMagiciensDuCode);
+  console.log("");
+  afficherTitre("Vos références");
+  afficherNumeroClient(numeroClient);
   // <===== FIN DE VOTRE CODE CI-DESSUS =====>
 }
 // Décommentez le code ci-dessous pour commencer l'exercice
-// afficherEntete(1337);
+afficherEntete(1337);
 
 // Corrigez le bogue ! 0
 // Décommentez le code du stagiaire ci-dessous et corrigez tous les bogues !
-// function afficherPlusieursEtoiles(nombre) {
-//   let ligne = "";
-//   for (let position = 0; position <= nombre; position = position + 1) {
-//     ligne = ligne + "*";
-//   }
-//   console.log(ligne);
-// }
-// function afficherTriangleEtoile(longueurMax) {
-//   for (let position = 0; position < longueurMax; position = position + 1) {
-//     afficherPlusieursEtoiles(position);
-//   }
-//   for (let position = longueurMax - 2; position > 0; position = position - 2) {
-//     afficherPlusieursEtoiles(position);
-//   }
-// }
-// afficherTriangleEtoile(7);
+function afficherPlusieursEtoiles(nombre) {
+  let ligne = "";
+  for (let position = 0; position < nombre; position = position + 1) {
+    ligne = ligne + "*";
+  }
+  console.log(ligne);
+}
+function afficherTriangleEtoile(longueurMax) {
+  for (let position = 1; position <= longueurMax; position = position + 2) {
+    afficherPlusieursEtoiles(position);
+  }
+  for (let position = longueurMax - 2; position > 0; position = position - 2) {
+    afficherPlusieursEtoiles(position);
+  }
+}
+afficherTriangleEtoile(7);
